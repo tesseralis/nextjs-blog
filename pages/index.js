@@ -17,8 +17,9 @@ export default function Home({ allPostsData }) {
           lettuce.
         </p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          <Link href={`/numbers/${Math.round(Math.random() * 1000)}`}>
+            <a>Pick a number!</a>
+          </Link>
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
